@@ -12,7 +12,7 @@ class RegistraitionController extends Controller
     public function register(Request $request){
         echo "<pre>";
         print_r($request->all());
-        logger("Request Data : " . json_encode($request->all()));
+        logger("Request Data ---- : " . json_encode($request->all()));
     }
     
 }
