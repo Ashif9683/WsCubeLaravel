@@ -17,46 +17,12 @@
         @csrf
         <div class="container">
             <h1 class="text-center">Registraition</h1>
-            <div class="form-group">
-                <label for="">Name</label>
-                <input type="text" name="name" id="" class="form-control" placeholder="" aria-describedby="helpId"
-                    value="{{ old('name') }}" />
-                <span class="text-danger">
-                    @error('name')
-                        {{ $message }}
-                    @enderror
-                </span>
-            </div>
-            <div class="form-group">
-                <label for="">Email</label>
-                <input type="email" name="email" id="" class="form-control" placeholder="" aria-describedby="helpId"
-                    value="{{ old('email') }}" />
-                <span class="text-danger">
-                    @error('email')
-                        {{ $message }}
-                    @enderror
-                </span>
-            </div>
-            <div class="form-group">
-                <label for="">Password</label>
-                <input type="password" name="password" id="" class="form-control" placeholder=""
-                    aria-describedby="helpId" />
-                <span class="text-danger">
-                    @error('password')
-                        {{ $message }}
-                    @enderror
-                </span>
-            </div>
-            <div class="form-group">
-                <label for="">Confirm Password</label>
-                <input type="password" name="confirmed_password" id="" class="form-control" placeholder=""
-                    aria-describedby="helpId" />
-                <span class="text-danger">
-                    @error('confirmed_password')
-                        {{ $message }}
-                    @enderror
-                </span>
-            </div>
+    
+            <x-form-input type="text" name="name" label="Please enter your name"></x-form-input>
+            <x-form-input type="email" name="email" label="Please enter your "></x-form-input>
+            <x-form-input type="password" name="password" label="Password"></x-form-input>
+            <x-form-input type="password" name="confirmed_password" label="Confirmed_password"></x-form-input>
+  
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
