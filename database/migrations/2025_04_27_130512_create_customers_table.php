@@ -15,11 +15,11 @@ return new class extends Migration {
             $table->string('name', 50);
             $table->string('email', 50);
             $table->enum('gender', ['M', 'F', 'O'])->nullable();
+            $table->string('city');
+            $table->string('state');
             $table->string('address');
             $table->date('dob')->nullable();
             $table->string('password');
-            $table->boolean('status')->default(1);
-            $table->integer('points')->default(0);
 
             $table->timestamps();
         });
