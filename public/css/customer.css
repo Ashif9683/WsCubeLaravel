@@ -1,0 +1,27 @@
+.heading {
+    margin-block: 2vw;
+
+}
+
+.label {
+    font-size: 1vw;
+    color: rgb(42, 42, 156);
+    font-weight: bolder;
+}
+
+input {
+    border: rgb(60, 21, 233);
+}
+
+h1 {
+    color: rgb(2, 2, 53);
+}
+
+.table.blue-border {
+    border: 2px solid rgb(27, 27, 97);
+}
+
+.table.blue-border th,
+.table.blue-border td {
+    border: 1px solid rgb(27, 27, 97);
+}
